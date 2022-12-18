@@ -8,6 +8,10 @@
 a {
   text-decoration: none;
 }
+
+body{
+  position: relative;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -449,6 +453,20 @@ a {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.modal_animation{
+  animation-name: modal;
+  animation-duration: 2s;
+}
+
+@keyframes modal {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .modal__dialog {
   max-width: 500px;
   margin: 40px auto;
@@ -814,3 +832,18 @@ section {
     opacity: 1;
   }
 }
+
+.return_btn{
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  padding: 10px;
+  border: none;
+  background-color: rgb(46, 46, 237);
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+

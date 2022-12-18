@@ -52,8 +52,8 @@
         <div class="header__content">
           <h2>Central Intellegance</h2>
           <div class="btn__group">
-            <button class="button arrow">Read more</button>
-            <button class="button phone">Contact Us</button>
+            <button data-modal class="button arrow">Read more</button>
+            <button data-modal class="button phone">Contact Us</button>
           </div>
         </div>
       </div>
@@ -316,26 +316,26 @@
              very favorable conditions. Anyone who orders food delivery for
              week, a discount of <span>20%!</span>
             <br /><br />
-            The promotion will end on May 20 at 00:00
+            <p class="deadline">The promotion will end on March 15 2023 year at 00:00</p>
           </div>
         </div>
         <div class="promotion__timer">
           <div class="title">Remaining until the end of the promotion:</div>
           <div class="timer">
             <div class="timer__block">
-              <span id="days">99</span>
+              <span id="days"></span>
               day
             </div>
             <div class="timer__block">
-              <span id="hours">09</span>
+              <span id="hours"></span>
               hours
             </div>
             <div class="timer__block">
-              <span id="minutes">99</span>
+              <span id="minutes"></span>
               minutes
             </div>
             <div class="timer__block">
-              <span id="seconds">09</span>
+              <span id="seconds"></span>
               seconds
             </div>
           </div>
@@ -348,7 +348,7 @@
       <div class="modal__dialog">
         <div class="modal__content">
           <form action="#">
-            <div class="modal__close">&times;</div>
+            <div data-close class="modal__close">&times;</div>
             <div class="modal__title">
               Мы свяжемся с вами как можно быстрее!
             </div>
@@ -372,5 +372,6 @@
       </div>
     </div>
     <script src="./js/script.js"></script>
+    <button class="return_btn">&uarr;</button>
   </body>
 </html>
